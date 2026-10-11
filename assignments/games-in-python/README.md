@@ -1,19 +1,41 @@
 
-# 🎮 Hangman Game Challenge
+# 📘 Assignment: Hangman Game
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+## 🎯 Objective
 
-## � What You'll Build
+Build a command-line Hangman game that uses strings, loops, conditionals, random selection, and user input. The player should reveal a randomly selected word by guessing its letters before running out of incorrect guesses.
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+## 📝 Tasks
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+### 🛠️ Set Up the Game
 
-## ✅ Must Have's
+#### Description
+Choose a secret word from the provided word list and initialize the variables needed to track the game.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+#### Requirements
+Completed program should:
+
+- Select one word at random from the provided `words` list.
+- Track the letters guessed by the player.
+- Set and track a maximum of six incorrect guesses.
+- Display each unrevealed letter as an underscore, with spaces between positions.
+
+### 🛠️ Run the Guessing Loop
+
+#### Description
+Repeatedly ask the player for a letter, update the game state, and end the game when the word is guessed or no incorrect guesses remain.
+
+#### Requirements
+Completed program should:
+
+- Accept a letter guess from the player during each turn.
+- Reveal the positions of correctly guessed letters in the secret word.
+- Reduce the remaining incorrect guesses when a guess is not in the secret word.
+- Continue until the player guesses the full word or uses all six incorrect guesses.
+- Display a win message when the word is guessed, or a lose message and the secret word when attempts run out.
+
+Example progress display for the word `python` after guessing `p` and `o`:
+
+```text
+p _ _ _ o _
+```
