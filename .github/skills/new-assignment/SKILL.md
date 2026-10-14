@@ -11,7 +11,7 @@ Assignments live in `assignments/<id>/`, and the website reads `config.json` to 
 
 If the user hasn't specified, ask what programming concept the assignment should cover.
 
-> 📖 Read [references/assignment-guide.md](references/assignment-guide.md) for guidance on difficulty, scope, and when to include starter code.
+> 📖 Read [assignment-guide.md](assignment-guide.md) for guidance on difficulty, scope, and when to include starter code.
 
 ## Step 2: Create the Assignment
 
@@ -24,11 +24,11 @@ Use the bundled scripts — do NOT edit `config.json` manually.
 
 **Register the assignment:**
 
-    node .github/skills/new-assignment/scripts/update-config.js <id> "<title>" "<description>"
+    node .github/skills/new-assignment/references/scripts/update-config.js <id> "<title>" "<description>"
 
 **Register each file as an attachment** (starter code, data files, etc.):
 
-    node .github/skills/new-assignment/scripts/add-attachment.js <id> "<display-name>" <filename> <type>
+    node .github/skills/new-assignment/references/scripts/add-attachment.js <id> "<display-name>" <filename> <type>
 
 Common types: `python`, `csv`, `json`, `txt`, `html`
 
